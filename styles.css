@@ -47,18 +47,15 @@ table {
 /* Styles for the whole document */
 body {
   background-color: #181818;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Styles for the Header */
-.container {
-	max-width: 100%;
-}
-
 .yt-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 130px;
+  margin-right: 150px;
 }
 
 .header .container {
@@ -68,6 +65,15 @@ body {
 	justify-content: flex-start;
   flex-wrap: wrap;
   background-color: #202020;
+}
+
+.bbar {
+  width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 15px;
 }
 
 .htext {
@@ -136,5 +142,134 @@ body {
 
 .hnav {
   margin-left: auto;
+}
+
+/*Styling for Main Video*/
+#main-video {
+  padding: 24px;
+}
+
+.main-title {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+#main-views {
+  color: #aaaaaa;
+  font-size: 14px;
+  /* margin-right: auto; */
+}
+
+/* Icons Container*/
+#bbar-icons {
+  margin-left: 280px;
+  display: flex;
+  align-items: center;
+}
+
+/* Individual Icons */
+.bbar-item {
+  color: #aaaaaa;
+  font-size: 20px;
+  margin-left: 7px;
+}
+
+.bbar-icon {
+  color: #aaaaaa;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.divider {
+  margin-right: 422px;
+}
+
+/* Sidebar Stylings*/
+.sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 425px; /* Set the width of the sidebar */
+  position: fixed; /*Fixed Sidebar (stay in place on scroll)*/
+  z-index: 1; /* Stay on top */
+  top: 50px;
+  right: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  /* background-color: purple; */
+}
+
+.side-header {
+  color: white;
+  margin-top: 5px;
+}
+
+.side-text {
+  color: white;
+  font-size: 15px;
+}
+
+.side-sub {
+  color: #717171;
+  font-size: 13px;
+}
+
+/* Side Videos Styling */
+.wrapper {
+  display: grid;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  grid-template-columns: 175px 200px;
+  grid-template-rows: 100px;
+}
+
+.sidewrapper {
+  display: grid;
+  grid-template-rows: 40px 40px 32px;
+}
+
+.box1 { 
+  grid-column-start: 1; 
+  grid-column-end: 2; 
+  grid-row-start: 1; 
+  grid-row-end: 2; 
+}
+
+.box2 { 
+  grid-column-start: 2; 
+  grid-column-end: 3; 
+  grid-row-start: 1; 
+  grid-row-end: 2; 
+}
+
+.top {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.mid {
+  margin-top: 10px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.bot {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.side-vid {
+  width: 168px;
+}
+
+.side-div {
+  margin-right: 20px;
+  color: #303030;
 }
 
